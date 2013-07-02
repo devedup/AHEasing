@@ -244,7 +244,7 @@ AHFloat BackEaseIn(AHFloat p)
 AHFloat BackEaseOut(AHFloat p)
 {
 	AHFloat f = (1 - p);
-	return 1 - (f * f * f - f * sin(f * M_PI));
+	return 1 - (f * f * f - f/2 * sin(f * M_PI));
 }
 
 // Modeled after the piecewise overshooting cubic function:
